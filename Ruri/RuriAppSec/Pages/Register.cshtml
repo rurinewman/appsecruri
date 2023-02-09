@@ -1,0 +1,379 @@
+﻿@page
+@using AspNetCore.ReCaptcha;
+@model RuriAppSec.Pages.RegisterModel
+@Html.ReCaptcha()
+@{
+}
+@*<style>
+
+    .form-control {
+        height: 41px;
+        background: #f2f2f2;
+        box-shadow: none !important;
+        border: none;
+    }
+
+        .form-control:focus {
+            background: #e2e2e2;
+        }
+
+    .form-control, .btn {
+        border-radius: 3px;
+    }
+
+    .signup-form {
+        width: 390px;
+        margin: 30px auto;
+    }
+
+        .signup-form form {
+            color: #999;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            background: #fff;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+
+        .signup-form h2 {
+            color: #333;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .signup-form hr {
+            margin: 0 -30px 20px;
+        }
+
+        .signup-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .signup-form input[type="checkbox"] {
+            margin-top: 3px;
+        }
+
+        .signup-form .row div:first-child {
+            padding-right: 10px;
+        }
+
+        .signup-form .row div:last-child {
+            padding-left: 10px;
+        }
+
+        .signup-form .btn {
+            font-size: 16px;
+            font-weight: bold;
+            background: #3598dc;
+            border: none;
+            min-width: 100%;
+        }
+
+            .signup-form .btn:hover, .signup-form .btn:focus {
+                background: #2389cd !important;
+                outline: none;
+            }
+
+        .signup-form a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+            .signup-form a:hover {
+                text-decoration: none;
+            }
+
+        .signup-form form a {
+            color: #3598dc;
+            text-decoration: none;
+        }
+
+            .signup-form form a:hover {
+                text-decoration: underline;
+            }
+
+        .signup-form .hint-text {
+            padding-bottom: 15px;
+            text-align: center;
+        }
+</style>
+
+
+
+<div class="container mt-5">
+
+
+
+    <div class="signup-form">
+        <form method="post" enctype="multipart/form-data">
+            <h2>Registration</h2>
+            <p>Please fill in this form to create an account!</p>
+            <hr>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" asp-for="RegisterModelObject.First_Name" placeholder="First Name" required="required">
+                        <span class="text-danger" asp-validation-for="RegisterModelObject.First_Name"></span>
+                        </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control"asp-for="RegisterModelObject.Last_Name" placeholder="Last Name" required="required">
+                        <span class="text-danger" asp-validation-for="RegisterModelObject.Last_Name"></span>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" asp-for="RegisterModelObject.Password" placeholder="Password" required="required">
+                        <span class="text-danger" asp-validation-for="RegisterModelObject.Password"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="form-control" asp-for="RegisterModelObject.ConfirmPassword" placeholder="Confirm Password" required="required">
+                        <span class="text-danger" asp-validation-for="RegisterModelObject.ConfirmPassword"></span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="email" class="form-control" asp-for="RegisterModelObject.Email" placeholder="Email" required="required">
+                        <span class="text-danger" asp-validation-for="RegisterModelObject.Email"></span>
+                <span asp-validation-for="RegisterModelObject.Email" class="text-danger"></span>
+
+            </div>
+
+                        <div class="form-group">
+                <input type="text" class="form-control" asp-for="RegisterModelObject.Gender" placeholder="Gender" required="required">
+                        <span class="text-danger" asp-validation-for="RegisterModelObject.Gender"></span>
+
+            </div>
+
+
+
+            <div class="form-group">
+                <input type="text" class="form-control" asp-for="RegisterModelObject.NRIC" placeholder="NRIC" required="required">
+                        <span class="text-danger" asp-validation-for="RegisterModelObject.NRIC"></span>
+
+            </div>
+            <div class="form-group">
+                <input id="birthday" type="date" class="form-control"asp-for="RegisterModelObject.DateOfBirth" placeholder="Date Of Birth" required="required">
+                        <span class="text-danger" asp-validation-for="RegisterModelObject.DateOfBirth"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" asp-for="RegisterModelObject.ResumeDoc">Resume</label>
+                <input id="file_upload" type="file" accept="image/*" asp-for="RegisterModelObject.Upload" class="form-control" />
+                <span class="text-danger" asp-validation-for="RegisterModelObject.Upload"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" asp-for="RegisterModelObject.Whoami"placeholder="Who am i?" required="required">
+                        <span class="text-danger" asp-validation-for="RegisterModelObject.Whoami"></span>
+            </div>
+
+@*            <div class="form-group">
+                <input type="text" class="form-control" asp-for="RegisterModelObject.ResumeDoc" placeholder="Resume" required="required">
+                <span class="text-danger" asp-validation-for="RegisterModelObject.ResumeDoc"></span>
+            </div>*@
+
+
+        
+@*            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-m">Sign Up</button>
+            </div>
+        </form>
+        <div class="hint-text">Already have an account? <a href="#">Login here</a></div>
+    </div>
+
+*@
+
+
+
+<div class="container mt-5">
+
+<div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+            <div class="card" style="border-radius: 1rem;">
+                <div class="row g-0">
+                    <div class="col-md-6 col-lg-5 d-none d-md-block">
+                        <img src="https://officesnapshots.com/wp-content/uploads/2017/12/celgene-offices-melbourne-unispace-2-800x1200.jpg"
+                             alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                    </div>
+                    <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                        <div class="card-body p-4 p-lg-5 text-black">
+
+                            <form method="post" enctype="multipart/form-data">
+
+                                <div class="d-flex align-items-center mb-3 pb-1">
+                                    
+                                    <span class="h1 fw-bold mb-0">Ace Job Agency</span>
+                                </div>
+
+                                <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Register for an account</h5>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form2Example17">First Name</label>
+                                                <input type="text" class="form-control" asp-for="RegisterModelObject.First_Name" placeholder="Alice" required="required">
+                                                <span class="text-danger" asp-validation-for="RegisterModelObject.First_Name"></span>
+                                             </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form2Example27">Last Name</label>
+                                                <input type="text" class="form-control" asp-for="RegisterModelObject.Last_Name" placeholder="Doe" required="required">
+                                                <span class="text-danger" asp-validation-for="RegisterModelObject.Last_Name"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form2Example17">Password</label>
+                                                <input type="password" class="form-control" asp-for="RegisterModelObject.Password" placeholder="Password" required="required">
+                                                <span class="text-danger" asp-validation-for="RegisterModelObject.Password"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form2Example17">Confirm Password</label>
+                                                <input type="password" class="form-control" asp-for="RegisterModelObject.ConfirmPassword" placeholder="Confirm Password" required="required">
+                                                <span class="text-danger" asp-validation-for="RegisterModelObject.ConfirmPassword"></span>
+                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-outline mb-4">
+                                            <label class="form-label" for="form2Example17">Your Email</label>
+                                            <input type="email" class="form-control" asp-for="RegisterModelObject.Email" placeholder="Email" required="required">
+                                            <span class="text-danger" asp-validation-for="RegisterModelObject.Email"></span>
+                                            <span asp-validation-for="RegisterModelObject.Email" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form2Example17">Gender</label>
+                                                <select class="form-select" asp-for="RegisterModelObject.Gender" required>
+                                                    <option value="Female">Female</option>
+                                                    <option value="Male">Male</option>
+                                                </select>
+                                                <span class="text-danger" asp-validation-for="RegisterModelObject.Gender"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form2Example17">NRIC</label>
+                                                <input type="text" class="form-control" asp-for="RegisterModelObject.NRIC" placeholder="NRIC" required="required">
+                                                <span class="text-danger" asp-validation-for="RegisterModelObject.NRIC"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <div class="form-outline mb-4">
+                                                <label class="form-label" for="form2Example17">Birth Date</label>
+                                                <input id="birthday" type="date" class="form-control" asp-for="RegisterModelObject.DateOfBirth" placeholder="Date Of Birth" required="required">
+                                                <span class="text-danger" asp-validation-for="RegisterModelObject.DateOfBirth"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" asp-for="RegisterModelObject.ResumeDoc">Resume</label>
+                                        <input id="file_upload" type="file" accept="image/*" asp-for="RegisterModelObject.Upload" class="form-control" />
+                                        <span class="text-danger" asp-validation-for="RegisterModelObject.Upload"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label" for="form2Example17">Who are you?</label>
+                                        <input type="text" class="form-control" asp-for="RegisterModelObject.Whoami" placeholder="I am a fantastic individual !" required="required">
+                                        <span class="text-danger" asp-validation-for="RegisterModelObject.Whoami"></span>
+                                    </div>
+                                </div>
+
+
+                                <div class="pt-1 mb-4">
+                                    <button type="submit" class="btn btn-primary btn-m">Sign Up</button>
+                                </div>
+                                <div class="mb-5 pb-lg-2" style="color: #393f81;">Already have an account?<a href="/Login" style="color: #393f81;">Login here</a></div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementById("birthday").setAttribute('max', today)
+
+    }
+
+    $(document).ready(function () {
+
+
+        $('#file_upload').change(function () {
+            var file = this.files[0];
+            var magicNumber = file.slice(0, 4); // read the first 4 bytes
+            var reader = new FileReader();
+            reader.readAsBinaryString(magicNumber);
+            reader.onloadend = function () {
+                // the magic number for a .docx file is "D0CF11E0"
+                if (reader.result === "D0CF11E0") {
+                    console.log(".docx file detected");
+                }
+                // the magic number for a .pdf file is "%PDF"
+                else if (reader.result.startsWith("%PDF")) {
+                    console.log(".pdf file detected");
+                }
+                else {
+                    console.log("unknown file type");
+                }
+            }
+        });
+
+    })
+
+
+
+
+
+
+
+</script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        <script src='https://www.google.com/recaptcha/api.js%27%3E'></script>
+
+    }
+ }

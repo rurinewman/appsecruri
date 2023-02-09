@@ -1,0 +1,18 @@
+﻿@page
+@model RuriAppSec.Pages.SettingsModel
+@{
+}
+
+
+@{
+    if (User?.Identity?.IsAuthenticated ?? false)
+    {
+
+        <h1>@Model.Settings_Model.FirstName</h1>
+        // unencryption hashed value
+        <h1>@Model.Settings_Model.NRIC</h1>
+
+
+    }
+
+}

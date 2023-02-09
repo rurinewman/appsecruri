@@ -1,0 +1,211 @@
+﻿@page
+@model RuriAppSec.Pages.LoginModel
+@{
+}
+@*
+<style>
+
+    .form-control {
+        height: 41px;
+        background: #f2f2f2;
+        box-shadow: none !important;
+        border: none;
+    }
+
+        .form-control:focus {
+            background: #e2e2e2;
+        }
+
+    .form-control, .btn {
+        border-radius: 3px;
+    }
+
+    .login-form {
+        width: 390px;
+        margin: 30px auto;
+    }
+
+        .login-form form {
+            color: #999;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            background: #fff;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+
+        .login-form h2 {
+            color: #333;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        .login-form hr {
+            margin: 0 -30px 20px;
+        }
+
+        .login-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .login-form input[type="checkbox"] {
+            margin-top: 3px;
+        }
+
+        .login-form .row div:first-child {
+            padding-right: 10px;
+        }
+
+        .login-form .row div:last-child {
+            padding-left: 10px;
+        }
+
+        .login-form .btn {
+            font-size: 16px;
+            font-weight: bold;
+            background: #3598dc;
+            border: none;
+            min-width: 100%;
+        }
+
+            .login-form .btn:hover, .login-form .btn:focus {
+                background: #2389cd !important;
+                outline: none;
+            }
+
+        .login-form a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+            .login-form a:hover {
+                text-decoration: none;
+            }
+
+        .login-form form a {
+            color: #3598dc;
+            text-decoration: none;
+        }
+
+            .login-form form a:hover {
+                text-decoration: underline;
+            }
+
+        .login-form .hint-text {
+            padding-bottom: 15px;
+            text-align: center;
+        }
+</style>
+
+
+
+<div class="container mt-5">
+
+
+    <div class="login-form">
+        <form  method="post">
+            <h2>Login</h2>
+            <p>Please fill in this form to Login!</p>
+            <hr>
+
+
+            <div class="form-group">
+                <input type="email" class="form-control"  asp-for="LoginModelObject.Email" placeholder="Email" required="required">
+            </div>
+
+
+            <div class="form-group">
+                <input type="password" class="form-control"  asp-for="LoginModelObject.Password"  placeholder="Password" required="required">
+            </div>
+            
+
+         <div class="row">
+
+             <div class="col-6">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg">Login Now</button>
+                    </div>
+             </div>
+
+             <div class="col-6">
+                    <div class="form-group">
+                        <a type="button" asp-page="PasswordReset/forgetPassword" >Forget Password</a>
+                    </div>
+
+             </div>
+
+         </div>
+           
+            
+        </form>
+        <div class="hint-text">No Account? <a href="#">Register here</a></div>
+        <div class="form-group">
+            <a asp-page="ForgotPassword">Forgot Password</a>
+        </div>
+        
+    </div>
+
+
+
+
+</div>
+*@
+
+<div class="container mt-5">
+
+<div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+            <div class="card" style="border-radius: 1rem;">
+                <div class="row g-0">
+                    <div class="col-md-6 col-lg-5 d-none d-md-block">
+                        <img src="https://officesnapshots.com/wp-content/uploads/2017/12/celgene-offices-melbourne-unispace-1-800x1200.jpg"
+                             alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                    </div>
+                    <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                        <div class="card-body p-4 p-lg-5 text-black">
+
+                            <form method="post">
+
+                                <div class="d-flex align-items-center mb-3 pb-1">
+                                    
+                                    <span class="h1 fw-bold mb-0">Ace Job Agency</span>
+                                </div>
+
+                                <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Login to your account</h5>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="form2Example17">Email address</label>
+                                    <input type="email" class="form-control" asp-for="LoginModelObject.Email" placeholder="Your account email" class="form-control form-control-lg" required="required">
+
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" for="form2Example27">Password</label>
+                                    <input type="password" class="form-control" asp-for="LoginModelObject.Password" placeholder="Your account password" class="form-control form-control-lg" required="required">
+
+                                </div>
+
+                                <div class="pt-1 mb-4">
+                                    <button type="submit" class="btn btn-dark btn-lg btn-block">Login Now</button>
+                                </div>
+
+                                <a type="button" asp-page="PasswordReset/forgetPassword" class="small text-muted">Forgot Password</a>
+@*
+                                <p class="mb-5 pb-lg-2" style="color: #393f81;">
+                                Don't have an account? 
+                                <a href="#!" style="color: #393f81;">Register here</a>
+                                </p>*@
+                                <div class="mb-5 pb-lg-2" style="color: #393f81;">No Account? <a href="/Register" style="color: #393f81;">Register here</a></div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+

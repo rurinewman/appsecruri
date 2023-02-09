@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RuriAppSec
+build_property.RootNamespace = RuriAppSec
+build_property.ProjectDir = C:\Users\rurif\OneDrive\Desktop\y2\app_sec\ruriappsec\Ruri-sAppSec\Ruri (2)\Ruri\RuriAppSec\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\rurif\OneDrive\Desktop\y2\app_sec\ruriappsec\Ruri-sAppSec\Ruri (2)\Ruri\RuriAppSec
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/errors/404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZXJyb3JzXDQwNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/OTPVerification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT1RQVmVyaWZpY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/PasswordReset/ConfirmPasswordReset.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFzc3dvcmRSZXNldFxDb25maXJtUGFzc3dvcmRSZXNldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/PasswordReset/forgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFzc3dvcmRSZXNldFxmb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/Shared/_FlashMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9GbGFzaE1lc3NhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rurif/OneDrive/Desktop/y2/app_sec/ruriappsec/Ruri-sAppSec/Ruri (2)/Ruri/RuriAppSec/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-295vgpgnnu

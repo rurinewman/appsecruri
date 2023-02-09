@@ -1,0 +1,31 @@
+﻿@page
+@using Microsoft.AspNetCore.Identity;
+@using RuriAppSec.Model;
+@inject UserManager<ApplicationUser> UserManager
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1>
+      
+        @{
+            if (User?.Identity?.IsAuthenticated ?? false)
+            {
+                <h2 class="display-4">Welcome, @UserManager.GetUserAsync(User).Result.FirstName</h2>
+                <h4>Your intro is: @Model.newwhoami</h4>
+                <h4>NRIC: @Model.NRIC</h4>
+
+            }
+            else
+            {
+                <h2 class="display-4">Welcome</h2>
+                <p>Login <a href="/Login">here</a></p>
+                <p>Register <a href="/Register">here</a></p>
+
+            }
+        }
+
+    </h1>
+</div>
